@@ -1,0 +1,115 @@
+html {
+  background-color: rgb(41, 47, 50);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  color: aliceblue;
+}
+
+#topPelis {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+}
+
+#topPelis li {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+#topPelis li p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.8px;
+  line-height: 40px;
+  max-width: 80%;
+  word-break: break-word;
+  font-weight: 500;
+  margin: 0;
+  align-self: flex-start;
+  transform: translate(-20px, -24px);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+}
+
+.iconoPlay {
+  position: absolute;
+  top: calc(0%);
+  height: 34px;
+  background-color: rgba(220, 247, 99, 0.8);
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.iconoGuardar {
+  position: absolute;
+  top: calc(0%);
+  left: 87%;
+  height: 30px;
+  background-color: rgba(220, 247, 99, 0.8);
+  padding: 2px;
+  border-radius: 6px;
+}
+
+ul li iframe:first-of-type {
+  opacity: 0;
+}
+
+article {
+  position: relative;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+article img:first-child {
+  box-shadow: 0 60px 60px -60px rgba(220, 247, 99, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
+
+article img:last-child {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+article:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+article:hover ~ .tituloPeli {
+  opacity: 50%;
+}
+
+article::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0.5) 83%, rgba(0, 0, 0) 95%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+article:hover::before {
+  opacity: 1;
+}
+
+article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
