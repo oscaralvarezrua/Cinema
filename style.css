@@ -41,8 +41,9 @@ h1 {
 
 button img {
   position: absolute;
-  top: calc(0%);
-  height: 34px;
+  top: calc(73%);
+  left: calc(70%);
+  height: 30px;
   background-color: rgba(220, 247, 99, 0.8);
   padding: 2px;
   border-radius: 6px;
@@ -57,12 +58,7 @@ button {
 
 .iconoGuardar {
   position: absolute;
-  top: calc(0%);
-  left: 87%;
-  height: 30px;
-  background-color: rgba(220, 247, 99, 0.8);
-  padding: 2px;
-  border-radius: 6px;
+  left: calc(87%);
 }
 
 .trailerOff {
@@ -72,10 +68,20 @@ button {
 .trailerOn {
   display: block;
   position: fixed;
-  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  z-index: 9;
   width: 60%;
   height: 60%;
-  transform: translate(20%, -98%);
+}
+
+.cerrarTrailer {
+  position: fixed;
+  top: 20%;
+  left: 83%;
+  transform: translate(-50%, -60%);
+  z-index: 10;
 }
 
 article {
@@ -89,6 +95,7 @@ article img:first-child {
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
+  max-height: 360px;
 }
 
 article img:last-child {
@@ -141,6 +148,10 @@ article:hover img:last-child {
   #topPelis li p {
     font-size: 28px; /* Reducir más el texto */
     transform: translate(-1, -12px); /* Ajustar posición */
+  }
+
+  button img {
+    transform: translateY(30px);
   }
 
   article img:last-child {

@@ -1,9 +1,10 @@
 "use strict";
 
 function botonTrailer(boton) {
-  const Id = boton.getAttribute("data-id");
-  const video = document.getElementById(Id);
+  const id = boton.getAttribute("data-id");
+  const video = document.getElementById(id);
 
-  video.classList.toggle("trailerOff");
   video.classList.toggle("trailerOn");
+  boton.classList.toggle("cerrarTrailer");
+  video.classList.toggle("trailerOff");
 }
