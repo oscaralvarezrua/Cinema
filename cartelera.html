@@ -37,19 +37,33 @@
             <img src="/media/mario-bros.jpg" alt="Cartelera Super Mario La Película" />
             <img src="/media/super-mario.png" alt="Imagen de Super Mario saltando" />
           </article>
+
           <p class="tituloPeli">Super Mario Bros La Pelicula</p>
-          <img src="media/boton-de-play.png" alt="Botón de play" class="iconoPlay" />
-          <iframe src="https://www.youtube.com/embed/_1f2RLdxQfA?si=9L8k1NfpelXeSAiH" title="Trailer Super Mario La Pelicula" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <img src="media/guardar-instagram.png" alt="Boton de guardar" class="iconoGuardar" />
+
+          <button data-id="video1" onclick="botonTrailer(this)">
+            <img src="media/boton-de-play.png" alt="Botón de play" />
+          </button>
+
+          <iframe src="https://www.youtube.com/embed/_1f2RLdxQfA?si=9L8k1NfpelXeSAiH" title="Trailer Super Mario La Pelicula" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="trailerOff" id="video1"></iframe>
+
+          <button>
+            <img src="media/guardar-instagram.png" alt="Boton de guardar" class="iconoGuardar" />
+          </button>
         </li>
         <li>
           <article>
             <img src="media/avatar.jpeg" alt="Cartelera Avatar 2" />
             <img src="media/jake_sully.png" alt="Imagen de Jake Sully" />
           </article>
+
           <p class="tituloPeli">Avatar el camino del agua</p>
-          <img src="media/boton-de-play.png" alt="Botón de play" class="iconoPlay" />
-          <iframe src="https://www.youtube.com/embed/_1f2RLdxQfA?si=9L8k1NfpelXeSAiH" title="Trailer Super Mario La Pelicula" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <button data-id="video2" onclick="botonTrailer(this)">
+            <img src="media/boton-de-play.png" alt="Botón de play" />
+          </button>
+
+          <iframe src="https://www.youtube.com/embed/FSyWAxUg3Go?si=L8zDOixjYyWQ5E_T" title="Trailer Avatar el camino del agua" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="trailerOff" id="video2"></iframe>
+
           <img src="media/guardar-instagram.png" alt="Boton de guardar" class="iconoGuardar" />
         </li>
         <li>
@@ -57,9 +71,15 @@
             <img src="media/vaiana 2.jpeg" alt="Cartelera de Vaiana 2" />
             <img src="media/vaiana.webp" alt="Imagen de Vaiana y Maui" />
           </article>
+
           <p class="tituloPeli">Vaiana 2</p>
-          <img src="media/boton-de-play.png" alt="Botón de play" class="iconoPlay" />
-          <iframe src="https://www.youtube.com/embed/_1f2RLdxQfA?si=9L8k1NfpelXeSAiH" title="Trailer Super Mario La Pelicula" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <button data-id="video3" onclick="botonTrailer(this)">
+            <img src="media/boton-de-play.png" alt="Botón de play" />
+          </button>
+
+          <iframe src="https://www.youtube.com/embed/O5lPAcMEKvE?si=-PAF_xqCUNw0Oiey" title="Trailer Vaiana 2" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="trailerOff" id="video3"></iframe>
+
           <img src="media/guardar-instagram.png" alt="Boton de guardar" class="iconoGuardar" />
         </li>
         <li>
@@ -67,12 +87,19 @@
             <img src="media/Spider_Man_No_Way_Home.jpg" alt="Cartelera de Spiderman no way home" />
             <img src="media/spiderman.png" alt="Imagen de Spiderman" />
           </article>
+
           <p class="tituloPeli">Spiderman No Way Home</p>
-          <img src="media/boton-de-play.png" alt="Botón de play" class="iconoPlay" />
-          <iframe src="https://www.youtube.com/embed/_1f2RLdxQfA?si=9L8k1NfpelXeSAiH" title="Trailer Super Mario La Pelicula" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <button data-id="video4" onclick="botonTrailer(this)">
+            <img src="media/boton-de-play.png" alt="Botón de play" />
+          </button>
+
+          <iframe src="https://www.youtube.com/embed/Df00ZNYEcAY?si=eUOx7rj3xxsll6SA" title="Trailer Spiderman No Way Home" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="trailerOff" id="video4"></iframe>
+
           <img src="media/guardar-instagram.png" alt="Boton de guardar" class="iconoGuardar" />
         </li>
       </ul>
     </main>
+    <script src="scripts/scriptCartelera.js"></script>
   </body>
 </html>

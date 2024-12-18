@@ -39,13 +39,20 @@ h1 {
   color: aliceblue;
 }
 
-.iconoPlay {
+button img {
   position: absolute;
   top: calc(0%);
   height: 34px;
   background-color: rgba(220, 247, 99, 0.8);
   padding: 2px;
   border-radius: 6px;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .iconoGuardar {
@@ -58,8 +65,17 @@ h1 {
   border-radius: 6px;
 }
 
-ul li iframe:first-of-type {
-  opacity: 0;
+.trailerOff {
+  display: none;
+}
+
+.trailerOn {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  width: 60%;
+  height: 60%;
+  transform: translate(20%, -98%);
 }
 
 article {
@@ -114,25 +130,6 @@ article:hover img:last-child {
   opacity: 1;
   transform: translateY(10%);
 }
-
-/* Adaptación para tablets */
-/* @media (max-width: 768px) {
-  #topPelis {
-    gap: 20px; 
-  }
-
-  #topPelis li {
-    width: 200px; 
-  }
-
-  #topPelis li p {
-    font-size: 30px; 
-  }
-
-  article img:last-child {
-    width: 150px; 
-  }
-} */
 
 /* Adaptación para móviles */
 @media (max-width: 480px) {
