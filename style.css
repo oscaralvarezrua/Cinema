@@ -84,6 +84,10 @@ button {
   z-index: 10;
 }
 
+.cerrarTrailer img {
+  content: url(media/marca-x.png);
+}
+
 article {
   position: relative;
   width: 250px;
