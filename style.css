@@ -14,6 +14,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 41px;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 }
 
 #topPelis li {
@@ -112,4 +113,40 @@ article:hover::before {
 article:hover img:last-child {
   opacity: 1;
   transform: translateY(10%);
+}
+
+/* Adaptación para tablets */
+/* @media (max-width: 768px) {
+  #topPelis {
+    gap: 20px; 
+  }
+
+  #topPelis li {
+    width: 200px; 
+  }
+
+  #topPelis li p {
+    font-size: 30px; 
+  }
+
+  article img:last-child {
+    width: 150px; 
+  }
+} */
+
+/* Adaptación para móviles */
+@media (max-width: 480px) {
+  #topPelis {
+    flex-direction: column; /* Cambiar la dirección a columna */
+    gap: 15px;
+  }
+
+  #topPelis li p {
+    font-size: 28px; /* Reducir más el texto */
+    transform: translate(-1, -12px); /* Ajustar posición */
+  }
+
+  article img:last-child {
+    width: 120px; /* Imagen aún más pequeña */
+  }
 }
